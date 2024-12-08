@@ -1,0 +1,175 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aina's Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Aina's Website</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="educational.html">Education</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li> <a href="contact.html"> Contact </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Marquee Section -->
+  <div class="marquee-container">
+    <marquee behavior="scroll" direction="left">
+      Welcome to Aina's Gallery! Explore beautiful memories captured through the lens.
+    </marquee>
+  </div>
+
+  <!-- Home Section -->
+  <section class="home">
+    <div class="content">
+      <h1> Aina's Favourable Memory </h1>
+      <p></p>
+    </div>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <div class="gallery-item">
+      <img src="aina1.jpg" alt="Image 1">
+    </div>
+    <div class="gallery-item">
+      <img src="aina2.jpg" alt="Image 2">
+    </div>
+    <div class="gallery-item">
+      <img src="aina3.jpg" alt="Image 3">
+    </div>
+    <div class="gallery-item">
+      <img src="aina4.jpg" alt="Image 4">
+    </div>
+    <div class="gallery-item">
+      <img src="aina5.jpg" alt="Image 5">
+    </div>
+    <div class="gallery-item">
+      <img src="aina6.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="aina8.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="aina10.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="aina11.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="aina12.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="aina13.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="aina14.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="friend1.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="friend2.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="friend3.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="friend4.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="friend5.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="friend6.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="relatives1.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="relatives2.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="food.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="relatives4.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="relatives5.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="relatives6.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="book.jpg" alt="Image 6">
+    </div>
+  </section>
+
+  <!-- Video Section -->
+<section class="video-section">
+  <h2> My Memorable Moment</h2>
+  <div class="video-container">
+    <div class="video-item">
+     <video autoplay loop muted controls width="500">
+                <source src="video1.mp4" type="video/mp4">
+            </video>
+      <iframe width="150%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <video autoplay loop muted controls width="500">
+                <source src="video5.mp4" type="video/mp4">
+            </video>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</section>
+  <!-- Footer Section -->
+  <div class="footer">
+    <p>© 2024 Aina's Gallery. All rights reserved.</p>
+    <p>Contact Info:</p>
+    <a href="https://x.com/ainasaf99" target="_blank">
+      <img src="twitter1.png" style="width: 30px; height: 30px; text-align: center; border-radius: 6px;">
+    </a>
+    <a href="https://www.instagram.com/_nrainash_/?hl=en" target="_blank">
+      <img src="ig1.jpeg" style="width: 30px; height: 30px; text-align: center; border-radius: 6px;">
+    </a>
+    <a href="https://www.instagram.com/_nrainash_/?hl=en" target="_blank">
+      <img src="facebook.png" style="width: 30px; height: 30px; text-align: center; border-radius: 6px;">
+    </a>
+    <div class="clock" id="clock"></div>
+  </div>
+
+  <script>
+    // Function to update the clock
+    function updateClock() {
+      const clockElement = document.getElementById('clock');
+      const now = new Date();
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      let seconds = now.getSeconds();
+
+      hours = hours < 10 ? '0' + hours : hours;
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+
+      clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    // Update the clock every second
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>
