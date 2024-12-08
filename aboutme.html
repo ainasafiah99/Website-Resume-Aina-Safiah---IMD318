@@ -1,0 +1,790 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aina's About Me</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+     
+
+    }
+
+    body {
+      font-family: Candara;
+      background: rgba(0);
+    
+    }
+
+    /* Header Styling */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(102, 51, 153, 0.8);
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      animation: slideDown 1s ease-out;
+    }
+
+    header .logo {
+      font-size: 35px;
+      color: black;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+      font-family: Times New Roman;
+      opacity: 0;
+      animation: slideInLeft 1s forwards;
+
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      opacity: 0;
+      animation: slideInRight 1s forwards;
+
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    @keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+    nav ul li a {
+      color: black;
+      text-decoration: none;
+      font-size: 20px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+     /* Marquee Styling */
+    .marquee-container {
+      margin-top: 60px;
+      background: rgba(147,112,219, 0.7);
+      color: #fff;
+      padding: 10px 0;
+      font-size: 18px;
+      font-weight: bold;
+      text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+      text-align: center;
+    }
+
+
+    /* Background Styling */
+    body {
+      background-image: url('purplebg11.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* About Me Section */
+    .about-me {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 100px 20px;
+      align-items: flex-start;
+      background: rgba(221,160,221, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-me .text {
+      flex: 1;
+      margin-right: 20px;
+      max-width: 50%;
+    }
+
+    .about-me .text p {
+      font-size: 18px;
+      color: black;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .about-me .slideshow-container {
+      flex: 1;
+      position: relative;
+      max-width: 50%;
+    }
+
+    .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+    }
+
+   .slideshow-container {
+    order: 1; /* Slideshow berada di atas */
+    }
+
+   table {
+   order: 2; /* Table berada di bawah */
+    }
+
+   .highlight-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #8A2BE2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .highlight-button:hover {
+      background-color: ##5D3FD3;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 100px 20px;
+      margin: 50px 0;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    #about me {
+      background-color: #ffe4e1;
+    }
+
+    #aina's profile {
+      background-color: #e6f7ff;
+    }
+
+    #hobbies {
+      background-color: #e6ffe6;
+    }
+
+    #favourite thing {
+      background-color: #e6ffe6;
+    }
+
+    #favourite food & drink {
+      background-color: #e6ffe6;
+    }
+
+    #favourite artist {
+      background-color: #e6ffe6;
+    }
+
+    #favourite youtuber podcast {
+      background-color: #e6ffe6;
+    }
+
+/* Profile Table */
+        table {
+            width: 200%;
+            margin: 0 auto;
+            border: 1px solid darkviolet;
+            border-collapse: collapse;
+	  
+
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 2px solid purple;
+        }
+
+        th {
+            background-color: violet;
+            color: black;
+	    font-family: Candara;
+	    font-size: 15px;
+        }
+
+        td {
+            background-color: #DA70D6;
+	    font-family: Times New Roman;
+	    font-size: 15px;
+        }
+
+     .content h1 {
+      font-size: 40px;
+      color: Purple;
+      margin-bottom: 0.5em;
+      text-align: center;
+}
+
+    .slideshow-container img {
+      width: 60%;
+      height: 50%;
+      border-radius: 10px;
+      border: 2px solid purple;
+      text-align: right;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      flex: 1;
+      position: relative;
+      max-width: 70%;
+      margin-left: 135px; /* Tambahkan margin kiri */
+    }
+
+    .slideshow-container .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .slideshow-container .arrow.left {
+      left: 70px;
+    }
+
+    .slideshow-container .arrow.right {
+      right: 30px;
+    }
+
+/* Flip Card Container */
+    .flip-card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsif */
+      gap: 20px; /* Jarak antara kad */
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 1200px; /* Lebar maksimum grid */
+    }
+
+    /* Flip Card Styling */
+    .flip-card {
+      background-color: transparent;
+      width: 100%;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.6s ease;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card-front {
+      background-color: #9932CC;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      font-family: Candara;
+    }
+
+    .flip-card-back {
+      background-color: #BA55D3;
+      color: black;
+      transform: rotateY(180deg);
+      text-align: center;
+      font-size: 16px;
+      font-family: Times New Roman;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+       /* Favourite Artist Section */
+#favourite-artist {
+  background-color: rgba(102, 51, 153, 0.9);
+  padding: 40px 20px;
+  margin: 50px 0;
+  border-radius: 10px;
+}
+
+#favourite-artist h2 {
+  font-family: Candara;
+  font-size: 30px;
+  color: #FF00FF;
+}
+
+.artist-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.artist-image {
+  width: 100%;
+  max-width: 90px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Favourite Podcast Youtuber Section */
+#favourite-podcast-youtuber {
+  background-color: rgba(102, 51, 153, 0.9);
+  padding: 40px 20px;
+  margin: 50px 0;
+  border-radius: 10px;
+}
+
+#favourite-podcast-youtuber h2 {
+  font-family: Candara;
+  font-size: 30px;
+  color: #FF00FF;
+}
+
+.podcast-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.podcast-image {
+  width: 50%;
+  height: 50%
+  max-width:100;
+  border-radius: 70%;
+  margin-top: 20px;
+}
+
+audio {
+  width: 50%;
+  margin-top: 20px;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+    /* Fade-In Text on Scroll */
+.content h1, .content p {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  /* Clock Animation */
+.clock {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+    /* Footer Section */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(102, 51, 153, 0.9);
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .clock {
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Aina's Website</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="educational.html">Education</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li> <a href="contact.html"> Contact </a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Marquee Section -->
+  <div class="marquee-container">
+    <marquee behavior="scroll" direction="left">
+      Welcome to About Me! Where You Can Get To Know More About Me.
+    </marquee>
+  </div>
+
+  <!-- About Me Section -->
+  <section class="about-me">
+    <div class="text">
+      <h1>About Me</h1>
+      <h3><i> Who Am I ? </h3></i>
+
+<br>
+
+      <p>
+        Welcome, everyone! My name is Nur Aina Safiah, but most people know me simply as Aina. 
+        I’m currently a Diploma in Information Management student at UiTM Segamat, one of the renowned 
+        branches of UiTM in Malaysia. This website marks an exciting milestone for me — it's my very first 
+        personal creation! Here, you’ll find an array of information about me and my journey. Dive in and 
+        explore — I promise there’s more to discover!
+      </p>
+
+<br>
+<br>
+
+     
+
+      <h1>My Highlight Navigation</h1>
+    <!-- Butang Navigasi -->
+    <a href="#about me" class="highlight-button"> About Me </a>
+    <a href="#aina's profile" class="highlight-button"> Aina's Profile </a>
+    <a href="#who am i" class="highlight-button"> Who Am I </a>
+    <a href="#favourite artist" class="highlight-button"> Favourite Artist </a>
+    <a href="#favourite youtuber podcast" class="highlight-button"> Favourite Youtuber Podcast </a>
+
+    
+<br>
+<hr>
+<hr>
+
+  </header>
+
+<br>
+<br>
+
+<h2 id="aina's profile" style="font-family: Times New Roman; text-align:center; border: 2px solid purple; width: 1176px; margin: 20px auto;"> Aina's Profile </h2>
+    <table>
+        <tr>
+            <th> FULLNAME </th>
+            <td> Nur Aina Safiah </td>
+        </tr>
+        <tr>
+            <th> NICKNAME </th>
+            <td> Aina </td>
+        </tr>
+        <tr>
+            <th> AGE </th>
+            <td> 20 </td>
+        </tr>
+        <tr>
+            <th> DATE OF BIRTH </th>
+            <td> 09 March 2004 </td>
+        </tr>
+        <tr>
+            <th> NATIONALITY </th>
+            <td> Malaysian </td>
+        </tr>
+        <tr>
+            <th> RELIGION </th>
+            <td> Islam </td>
+        </tr>
+	<tr>
+	    <th> FAVOURITE THING </th>
+	    <td <ol> <b> Favourite Food </b>
+                <li>Nasi Ayam Gepuk</li>
+                <li>Bihun Sup</li>
+                <li>Nasi Kerabu</li>
+
+<br>
+
+                <b> Favourite Beverage </b>
+                <li>Teh Ais</li>
+                <li>Watermelon Juice</li>
+                <li>Strawberry Milkshake</li>
+        
+<br>
+
+		<b> Favourite Dessert </b>
+                <li>Kek Batik</li>
+                <li>CheeseKut</li>
+                <li>Red Velvet Cheese Cake</li>
+	
+
+    </table>
+
+<br>
+<br>
+
+</table>
+
+   
+<!-- Flip Card Section -->
+  <section id="flip-card-section">
+    <h1 id="who am i" style="text-align: center; font-size: 40px; background-color: rgba(102, 51, 153, 0.7); border-radius: 10%;"> Who Am I </h1>
+    <div class="flip-card-container">
+      <!-- Card 1 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>About Me</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>My name is Nur Aina Safiah, also known as Aina. I was born on March 9, 2004, at Hospital Kuala Lumpur.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>My Hobbies</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>I love reading fiction book and listening to my favourite artist song, listening to podcast is also one of my favourite </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>My Education</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>I am pursuing a Diploma in Information Management at UiTM Segamat, currently on my last semester.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Future Aspirations</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>I aspire to continue my studies on degree for information science and excel in information management subject.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<br>
+
+<h1 id="favourite artist" style="text-align: center; font-family: Times New Roman; font-size: 30px; font-color: #BA55D3;"> Favourite Artist </h1>
+    <!-- Favourite Artist Section -->
+<section id="favourite-artist" class="section">
+  <h2 style="text-align: center; font-family: Times New Roman; font-size: 20px;">Lyodra</h2>
+  <div class="artist-content">
+    <p style="text-align: center; font-family: Times New Roman; font-size: 18px;"></p>
+    <!-- Gambar untuk Artist -->
+    <img src="lyodra.jpeg" alt="Favourite Artist Image" class="artist-image">
+    <!-- Audio for Favourite Artist -->
+    <audio controls style="display: block; margin: 20px auto;">
+      <source src="Tak Selalu Memiliki.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+
+<hr>
+<br>
+
+   <h2 style="text-align: center; font-family: Times New Roman; font-size: 20px;">Ariana Grande</h2>
+  <div class="artist-content">
+    <p style="text-align: center; font-family: Times New Roman; font-size: 18px;"></p>
+    <!-- Gambar untuk Artist -->
+    <img src="ariana.png" alt="Favourite Artist Image" class="artist-image">
+    <!-- Audio for Favourite Artist -->
+    <audio controls style="display: block; margin: 20px auto;">
+      <source src="ariana song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+</div>
+
+<hr>
+<br>
+
+   <h2 style="text-align: center; font-family: Times New Roman; font-size: 20px;">Irene</h2>
+  <div class="artist-content">
+    <p style="text-align: center; font-family: Times New Roman; font-size: 18px;"></p>
+    <!-- Gambar untuk Artist -->
+    <img src="irene.jpeg" alt="Favourite Artist Image" class="artist-image">
+    <!-- Audio for Favourite Artist -->
+    <audio controls style="display: block; margin: 20px auto;">
+      <source src="irene song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+</div>
+</section>
+
+
+<h1 id="favourite youtuber podcast" style="text-align: center; font-family: Times New Roman; font-size: 30px; font-color: #BA55D3;"> Favourite Youtuber Podcast </h1>
+<!-- Favourite Podcast Youtuber Section -->
+<section id="favourite-podcast-youtuber" class="section">
+  <h2 style="text-align: center; font-family: Candara; font-size: 30px;"> STEPHANIE SOO</h2>
+  <div class="podcast-content">
+    <p style="text-align: center; font-family: Times New Roman; font-size: 18px;">
+      One of my favourite Youtubers and podcast hosts is [Stephanie Soo].</p>
+    <!-- Gambar untuk Podcast Youtuber -->
+    <img src="stephanie1.jpg" alt="Favourite Podcast Youtuber Image" class="podcast-image">
+    <br>
+    <a href="https://youtube.com/@stephaniesoo?si=RzY24WjOl7M1c0Sr" target="_blank">STEPHANIE SOO</a>
+   </div>
+
+<br>
+
+
+<h2 style="text-align: center; font-family: Candara; font-size: 30px;"> ASHRAPPP</h2>
+  <div class="podcast-content">
+    <p style="text-align: center; font-family: Times New Roman; font-size: 18px;">
+      One of my favourite Youtubers and podcast hosts is [Ashrappp].</p>
+    <!-- Gambar untuk Podcast Youtuber -->
+    <img src="ashhrappp.jpg" alt="Favourite Podcast Youtuber Image" class="podcast-image">
+<br>
+    <a href="https://youtube.com/@ashhrappchannel23?si=Iof2V4JpHRzXmWjp" target="_blank">ASHHRAPP CHANNEL</a>
+  </div>
+</section>
+
+
+
+
+
+ 
+<br>
+<br>
+
+   
+    </div>
+    <div class="slideshow-container">
+      <img id="slideshow-image" src="aina1.jpg" alt="Aina">
+      <div class="arrow left" onclick="changeImage(-1)">&#10094;</div>
+      <div class="arrow right" onclick="changeImage(1)">&#10095;</div>
+    </div>
+  </section>
+
+
+
+  <script>
+    // JavaScript for Slideshow
+    const images = ["aina1.jpg", "aina2.jpg", "aina3.jpg"];
+    let currentIndex = 0;
+
+    function changeImage(direction) {
+      currentIndex = (currentIndex + direction + images.length) % images.length;
+      document.getElementById('slideshow-image').src = images[currentIndex];
+    }
+  </script>
+</section>
+
+  </section> 
+  <!-- Footer Section -->
+  <div class="footer">
+    <p>© 2024 My Educational Page. All rights reserved.</p>
+    <p>Contact Info:</p>
+    <a href="https://x.com/ainasaf99" target="_blank">
+      <img src="twitter1.png" style="width: 30px; height: 30px; text-align: center; border-radius: 6px;">
+    </a>
+    <a href="https://www.instagram.com/_nrainash_/?hl=en" target="_blank">
+      <img src="ig1.jpeg" style="width: 30px; height: 30px; text-align: center; border-radius: 6px;">
+    </a>
+    <a href="https://www.instagram.com/_nrainash_/?hl=en" target="_blank">
+      <img src="facebook.png" style="width: 30px; height: 30px; text-align: center; border-radius: 6px;">
+    </a>
+    <div class="clock" id="clock"></div>
+  </div>
+
+  <script>
+    // Function to update the clock
+    function updateClock() {
+      const clockElement = document.getElementById('clock');
+      const now = new Date();
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      let seconds = now.getSeconds();
+
+      hours = hours < 10 ? '0' + hours : hours;
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+
+      clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    // Update the clock every second
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>
